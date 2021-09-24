@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html{
+   background-color: rgb(223, 223, 223);
+ }
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu{
+    background-color: #ffffff;
+    margin-top: 5%;
+    display: flex;
+    font-family: 'Cairo', sans-serif;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 2px 10px 2px #b8b8b8;
+    border-radius: 5px;
+    width: 30%;
+
+}
+
+.main-menu div{
+    padding: 10px;
+}
+
+#calculate{
+  font-family: 'Cairo', sans-serif;
+  margin: 12px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+
+  transition: box-shadow 0.5s ease-in-out;
+  
+}
+#calculate:hover{
+  box-shadow: 0px 2px 10px 2px #bdbdbd;
+  transition: 0.3s;
+  transform: scale(1.2, 1.1);
+  
+}
+
+#result{
+  visibility: visible;
+  display: flex;
+  box-sizing: content-box;
+  border: none;
+  border-radius: 5px;
+  height: 5rem;
+  width: 20rem;
+  color:white;
+  background-color: grey;
+  margin-bottom: 24px;
+  margin-top: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.input{
+    position: relative;
+    margin: 20px auto;
+  }
+.form-control {
+   display: block;
+   line-height: 2em;
+   margin: 0;
+   padding-left: 10px;
+   width: 100%;
+   font-size: medium;
+   border: 1px solid #f4f4f4;
+   background-color: #f4f4f4;
+   border-radius: 5px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   font-weight: 500;
+ }
+ .form-control:focus {
+   border: 1px solid #2c7ac9;
+ }
+ .control-label {
+   display: block;
+   position: absolute;
+   opacity: 0;
+   bottom: 1.9rem;
+   color: #5d5d5d;
+   transition: 0.2s ease-in-out transform;
+   font-size: 12px;
+ }
+
+ .form-control:placeholder-shown + .control-label {
+   visibility: hidden;
+   z-index: -1;
+   transition: 0.2s ease-in-out;
+ }
+
+ .form-control:not(:placeholder-shown) + .control-label,
+.form-control:focus:not(:placeholder-shown) + .control-label {
+   visibility: visible;
+   z-index: 1;
+   opacity: 1;
+   transform: translateY(-10px);
+   transition: 0.2s ease-in-out transform;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>I.M.C.</title>
+
+    <!-- Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="container">
+        <div class="main-menu">
+            <div class="title"><h1>Calculadora IMC</h1></div>
+            <div class="box">
+                <div class="input">
+                    <input placeholder="Nome" type="text" class="form-control" id="name">
+                    <label for="input" class="control-label">Nome completo</label>
+                </div>
+                <div class="input">
+                    <input placeholder="Altura" type="number" class="form-control" id="height">
+                    <label for="input" class="control-label">Altura</label>
+                </div>
+                <div class="input">
+                    <input placeholder="Peso" type="number" class="form-control" id="weight">
+                    <label for="input" class="control-label">Peso</label>
+                </div>
+            </div>
+            <button id="calculate">Calcular</button>
+
+            <div class="result" id="result"></div>
+        </div>
+    </main>
+    <script type="text/javascript" src="imc.js"></script>
+</body>
+</html>
